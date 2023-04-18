@@ -12,9 +12,8 @@
 
 NAME = so_long
 
-SRCS = main.c prep.c inits.c updates.c walking.c exit.c get_next_line.c \
-		get_next_line_utils.c ft_conv.c ft_printf.c ft_puts.c side.c \
-		ft_split.c ft_strdup.c strjoin.c strlen.c ft_substr.c ft_putstr.c
+SRCS = get_next_line.c get_next_line_bonus.c \
+	get_next_line_utils.c get_next_line_utils_bonus.c
 
 OBJS = $(SRCS:.c=.o)
 
