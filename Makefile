@@ -22,12 +22,8 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 
 $(NAME): $(OBJS)
-	$(CC) $(OBJS) $(CFLAGS) -lmlx -framework OpenGL -framework AppKit -o $(NAME)
-
-%.o: %.c
-	$(CC) -Imlx -Imac -O3 -c $< -o $@
-##-g -fsanitize=address 
-
+	ar rc $(NAME) $(OBJS)
+	
 all: $(NAME)
 
 clean:
